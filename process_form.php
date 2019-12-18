@@ -1,7 +1,14 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = pg_connect("host=ec2-174-129-255-15.compute-1.amazonaws.com dbname=ddjhaurh263t6a user=dmwyzaotqxmuls password=4a457a0e22c03cc08fc8742e0975a87806ef2ffecb31d997be11bcdbcaf673a1");
+$HOST = "ec2-107-21-255-181.compute-1.amazonaws.com";
+$PORT = "5432";
+$DBNAME = "d69acd8leq4v0c";
+$USER = "gpzpokwwiitgwz";
+$PASSWORD = "50c502f726bc61052e7337d64d1fe9b8bac3a783cef2486f07d92642cbc58f18"
+
+$link = pg_connect("dbname=d69acd8leq4v0c host=ec2-107-21-255-181.compute-1.amazonaws.com sslmode=require
+port=5432 user=gpzpokwwiitgwz password=50c502f726bc61052e7337d64d1fe9b8bac3a783cef2486f07d92642cbc58f18 sslmode=require");
  
 // Check connection
 if($link === false){
